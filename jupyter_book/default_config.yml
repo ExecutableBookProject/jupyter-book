@@ -13,6 +13,8 @@ logo                        : ""  # A path to the book logo
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 # Auto-exclude files not in the toc
 only_build_toc_files        : false
+# Continuous numbering across parts/chapters
+use_multitoc_numbering      : true
 
 #######################################################################################
 # Execution settings

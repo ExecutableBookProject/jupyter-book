@@ -41,6 +41,9 @@ def setup(app):
     # Directives
     app.add_directive("tableofcontents", TableofContents)
 
+    # Config
+    app.add_config_value("use_multitoc_numbering", True, "env")
+
     # Transforms
     app.add_post_transform(SwapTableOfContents)
 

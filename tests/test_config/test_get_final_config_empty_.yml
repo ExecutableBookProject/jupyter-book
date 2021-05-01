@@ -24,6 +24,7 @@ final:
   - sphinx.ext.intersphinx
   - sphinx_panels
   - sphinx_book_theme
+  - sphinx_multitoc_numbering
   - jupyterbook_latex
   html_add_permalinks: ¶
   html_baseurl: ''
@@ -70,6 +71,7 @@ final:
   suppress_warnings:
   - myst.domains
   use_jupyterbook_latex: true
+  use_multitoc_numbering: true
 metadata:
   latex_doc_overrides:
     title: My Jupyter Book

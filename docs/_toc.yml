@@ -1,4 +1,5 @@
 - file: intro
+  numbered: true
 
 - part: Tutorials
   chapters:

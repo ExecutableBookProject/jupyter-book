@@ -83,6 +83,7 @@ setup(
         "sphinx-thebe~=0.0.8",
         "sphinx-panels~=0.5.2",
         "nested-lookup~=0.2.21",
+        "sphinx-multitoc-numbering~=0.1.0",
         "jupyterbook-latex~=0.2.0",
     ],
     extras_require=extras,

@@ -159,6 +159,9 @@ def get_final_config(
         "latex_individualpages": cli_config.pop("latex_individualpages"),
     }
 
+    if sphinx_config.get("use_multitoc_numbering"):
+        sphinx_config["extensions"].append("sphinx_multitoc_numbering")
+
     if sphinx_config.get("use_jupyterbook_latex"):
         sphinx_config["extensions"].append("jupyterbook_latex")
 
@@ -192,6 +195,7 @@ def yaml_to_sphinx(yaml: dict):
         "copyright": "copyright",
         "logo": "html_logo",
         "project": "project",
+        "use_multitoc_numbering": "use_multitoc_numbering",
     }
     for key, newkey in YAML_TRANSLATIONS.items():
         if key in yaml:

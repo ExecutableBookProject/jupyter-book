@@ -167,6 +167,12 @@ numbered. They will follow a hierarchy according to the sub-sections structure
 defined in your `_toc.yml` file.
 You can also **limit the TOC numbering depth** by setting the `numbered` flag to an integer instead of `true`, e.g., `numbered: 3`.
 
+By default, chapter numbering between parts will continue (it will not re-start at `1.` each time) using an extension called [sphinx-multitoc-numbering](https://github.com/executablebooks/sphinx-multitoc-numbering). To **restart chapter numbering between parts**, use the following setting in your `_config.yml` file:
+
+```yaml
+use_multitoc_numbering: false
+```
+
 If you'd like to number **subsets of chapters**, group them into parts and
 apply the `numbered: true` flag to the parts whose chapters you wish to be numbered.
 For example:
