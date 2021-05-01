@@ -21,7 +21,7 @@ Jupyter Book allows users to
 
 Jupyter Book is still developing relatively rapidly, so please be patient if things change
 or features iterate and change quickly. Once Jupyter Book hits 1.0, it will slow down
-considerably!
+considerably! thanks
 
 ## Contribute or improve the book
 

@@ -4,5 +4,5 @@ This section covers topics related to **executing** your content and interweavin
 
 See the sections below to get started.
 
-```{tableofcontents}
-```
+<!-- ```{tableofcontents}
+``` -->

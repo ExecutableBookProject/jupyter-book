@@ -5,5 +5,5 @@ You can write book content in a variety of markup languages and file formats, an
 
 See the sections below to get started.
 
-```{tableofcontents}
-```
+<!-- ```{tableofcontents}
+``` -->
