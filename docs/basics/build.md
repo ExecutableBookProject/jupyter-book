@@ -27,6 +27,24 @@ You can build a variety of outputs using Jupyter Book. To choose a different bui
 - `pdflatex`: Build a PDF of your book via Latex (see [](pdf:latex))
 
 
+## Exclude some pages from your book's build
+
+By default, Jupyter Book will build all content files that are found in your book's
+folder, even if they are not specified in `_toc.yml` (and will raise a warning if
+it finds a file that isn't listed there).
+
+If you'd like Jupyter Book to skip a file entirely, you can do so with the following
+configuration in `_config.yml`:
+
+```yaml
+exclude_patterns: [pattern1/*, path/to/myfile.ipynb]
+```
+
+Any files that match the patterns described there will be excluded from the build.
+If you'd like to exclude files from being *executed* but still wish for them to be
+built by Jupyter Book, see [](execute/exclude).
+
+
 (clean-build)=
 ## Clean your book's generated files
 
