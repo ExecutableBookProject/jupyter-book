@@ -3,6 +3,25 @@
 Your book's structure is determined by a **Table of Contents**.
 This is a YAML file (called `_toc.yml`) that defines a structure that Jupyter Book uses to create the order and nesting of pages.
 
+:::{admonition} Building articles or single pages
+:class: seealso
+You can also build an **article** (or a single page) rather than an entire book.
+This works similarly to the instructions detailed below.
+See [](../basics/page.md) for more information.
+:::
+
+:::{admonition} Migrate to the new Table of Contents structure
+:class: warning
+A new Table of Contents structure was introduced in `v0.11`.
+To migrate your old TOC structure to the new structure, use the following command:
+
+```shell
+jupyter-book toc migrate path/to/_toc.yml -o path/to/_toc.yml
+```
+
+This will overwrite your `_toc.yml` file with the new version.
+:::
+
 ## Basic Table of Contents structure
 
 The table of contents is broadly organized like so:
