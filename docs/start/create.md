@@ -132,7 +132,9 @@ Check out the other content in your configuration file, and reference it against
 Finally, your book also has a **Table of Contents** that tells Jupyter Book where each of your content source files should go.
 
 ```yaml
-- file: intro
+format: jb-book
+root: intro
+chapters:
 - file: markdown
 - file: notebooks
 ```
