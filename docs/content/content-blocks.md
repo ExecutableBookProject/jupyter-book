@@ -358,6 +358,57 @@ Body C
 ````
 `````
 
+
+```{warning} 
+Directives for styling a card must begin on the line **immediately** after the initial directive (for the first panel) and the `---` line denoting the start of a new panel.
+```
+
+These panels:
+
+```{panels}
+:column: w-75 text-justified
+Lorem ipsum and other stuff. Just keep typing. Shouldn't I copy the formal lorem ipsum? Meh. Nah. Too much work.
+---
+:column: w-25 text-center
+See: This works!
+```
+
+are created with:
+
+````
+```{panels}
+:column: w-75 text-justified
+Lorem ipsum and other stuff. Just keep typing. Shouldn't I copy the formal lorem ipsum? Meh. Nah. Too much work.
+---
+:column: w-25 text-center
+See: This works!
+```
+````
+
+But a slight change:
+
+````
+```{panels}
+:column: w-75 text-justified
+Lorem ipsum and other stuff. Just keep typing. Shouldn't I copy the formal lorem ipsum? Meh. Nah. Too much work.
+---
+
+:column: w-25 text-center
+See: This breaks!!
+```
+````
+
+Produces this:
+
+```{panels}
+:column: w-75 text-justified
+Lorem ipsum and other stuff. Just keep typing. Shouldn't I copy the formal lorem ipsum? Meh. Nah. Too much work.
+---
+
+:column: w-25 text-center
+See: This breaks!!
+```
+
 ## Dropdowns
 
 Dropdowns allows you to hide content behind a title and a button.
